@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Open Sans', sans-serif;">
+
+
+    <!-- Header NavBar -->
+    <header class="bg-black text-white h-[60px] flex items-center justify-left ">
+        <nav class="">
+
+            <ul class="flex gap-5 pl-32">
+                <li><img src="https://qwetzal.com/wp-content/uploads/elementor/thumbs/cropped-cropped-cropped-logo-q6mp13k2n4v0c6k7n9xk699pjcmk2nq2fcpeoevjm6.png" title="cropped-cropped-cropped-logo.png" alt="cropped-cropped-cropped-logo.png" ></li>
+                <li class="pl-12" onclick="toggle()">Home</li>
+                <li onclick="toggle()">Contact</li>
+                <li onclick="toggle()">Service</li>
+                <li onclick="toggle()">About</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="absolute hidden w-screen h-screen bg-slate-800 bg-opacity-30 flex flex-col items-center py-20 "
+        id="popup" onclick="toggle()">
+        <div class="absolute" onclick="event.stopPropagation();">
+            <div
+                class="text-white bg-gray-900 h-[200px] flex items-center justify-center px-6 grid grid-cols-2 mx-24 gap-5 rounded-lg">
+                <div class="px-12">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur reprehenderit sit
+                        voluptatibus doloremque magnam ab, quisquam voluptatum animi obcaecati nihil illum ipsum a
+                        minus.</p>
+                </div>
+                <div class="px-12 ">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ratione ea dolorum quasi
+                        reprehenderit
+                        iure numquam officia ut pariatur porro labore dolor quibusdam repellat quae iusto laborum, nisi
+                        illum vero alias tempore? Illum, delectus ad!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Main section -->
+    <div class="h-full w-full flex  bg-white font-medium">
+        <div class="grid md:grid-cols-2 gap-20 my-12 mx-6 flex justify-center md:ml-32 my-44">
+            <div>
+                <p>What we do</p>
+                <p class="text-4xl font-semibold leading-[44px]">Qwetzal transforms businesses through technology.</p>
+                <p class="my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, repellat nemo. Commodi
+                    magni laborum
+                    similique rerum quaerat libero necessitatibus ipsa amet voluptas reiciendis.</p>
+                <div>Get to know </div>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                    Contact us
+                </button>
+            </div>
+            <div class="my-6 flext px-6 md:ml-6">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUGK9U8PakyZ6xm_50cP7mmVF8WrOH0QOQ7g&usqp=CAU"
+                    class="pl-5" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio section -->
+    <div class="w-full h-full  ">
+        <p class="flex justify-center font-semibold text-2xl py-8 text-black">Trusted By Industry Leaders</p>
+        <div class="grid grid-cols-2 md:grid-cols-5 my-16 mx-4 md:ml-32">
+            <div class=" h-36 w-40">
+                <img class="object-cover" src="https://qwetzal.com/wp-content/uploads/2023/05/experienceduniya-1.webp"
+                    alt="">
+            </div>
+            <div class="h-36 w-40">
+                <img class="object-cover" src="https://qwetzal.com/wp-content/uploads/2023/05/logo-copy.png" alt="">
+            </div>
+            <div class="h-36 w-40">
+                <img class="object-cover" src="https://qwetzal.com/wp-content/uploads/2023/05/pathik.png" alt="">
+            </div>
+            <div class="h-36 w-40">
+                <img class="object-cover" src="https://qwetzal.com/wp-content/uploads/2023/05/statustan.png" alt="">
+            </div>
+            <div class="h-18 w-32">
+                <img class="object-cover"
+                    src="https://qwetzal.com/wp-content/uploads/2023/05/coral__1_-removebg-preview.png" alt="">
+            </div>
+            <!-- <div class="h-36 w-40">
+                <img class="object-cover" src="https://qwetzal.com/wp-content/uploads/2023/05/Screenshot-2023-01-18-at-12.48.36-PM.png" alt="">
+            </div>
+            <div class="h-36 w-40">
+                <img class="object-cover " src="https://qwetzal.com/wp-content/uploads/2023/05/Screenshot-2023-01-17-at-10.51.45-PM.png" alt="">
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="grid grid-cols-2">
+        <div class="ml-64">
+            <img class="h-[350px] " src="https://etimg.etb2bimg.com/photo/93625217.cms" alt="">
+        </div>
+        <div class="text-xl leading-relaxed my-8 mx-12">
+            <p class="text-2xl leading-9 italic py-2">Our Services</p>
+            <p class="font-semibold">App Development</p>
+            <p class="font-semibold">Digital Marketing</p>
+            <p class="font-semibold">Website Development</p>
+            <p class="font-semibold">Software Deveopment</p>
+        </div>
+    </div>
+
+    <!-- Four card with background picture and text -->
+    <div class="mx-8 py-20 h-full">
+        <p class="font-semibold text-2xl px-2 my-2">Belief in action</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-5 justify-center items-center my-8">
+
+            <div class="mx-2 box-border h-[300px] md:h-96 border-4 bg-no-repeat bg-cover rounded-lg"
+                style="background: url(https://litslink.com/wp-content/uploads/2021/03/web-development.png);">
+                <div class="bg-black h-full w-full bg-opacity-50 flex align-bottom relative">
+                    <p class="text-slate-100 pb-4 px-4 font-semibold text-auto md:text-2xl absolute bottom-0">“Great
+                        web design
+                        without functionality is like a sports car with no engine.”</p>
+                </div>
+            </div>
+            <div class="mx-2 box-border h-[300px] md:h-96 border-4 bg-no-repeat bg-cover rounded-lg"
+                style="background-image: url(https://img.freepik.com/free-vector/digital-marketing-infographic_52683-9003.jpg?w=2000);">
+                <div class="bg-black h-full w-full bg-opacity-10 flex relative">
+                    <p class="text-slate-100 pb-4 px-4 font-semibold text-auto md:text-2xl absolute bottom-0">
+                        “Business has only two functions — marketing and innovation.”</p>
+                </div>
+            </div>
+            <div class="mx-2 box-border h-[300px] md:h-96 border-4 bg-no-repeat bg-cover rounded-lg"
+                style="background-image: url(https://www.allbusiness.com/media-library/marketing.jpg?id=32092771&width=400&height=400);">
+                <div class="bg-black h-full w-full bg-opacity-50 flex relative">
+                    <p class="text-slate-100 pb-4 px-4 font-semibold text-auto md:text-2xl absolute bottom-0">“The
+                        best marketing doesn't feel like marketing.”</p>
+                </div>
+            </div>
+            <div class=" mx-2 box-border h-[300px] md:h-96 border-4   bg-no-repeat bg-cover rounded-lg bg-gradient-to-r from-indigo-500"
+                style="background-image: url(https://www.lonefircreative.com/hubfs/blog%20images/lone-fir-creative-Which-Digital-Marketing-Services-Are-Right-For-You.jpg);">
+                <div class="bg-black h-full w-full bg-opacity-50 flex relative">
+                    <p class="text-slate-100 pb-4 px-4 font-semibold text-auto md:text-2xl absolute bottom-0">
+                        “Business has only two functions — marketing and innovation.”
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-zinc-900 font-roboto md:h-64">
+        <div
+            class="container mx-auto flex flex-wrap text-slate-400 justify-center items-center text-center md:text-left py-8">
+            <ul class="w-1/2 md:w-1/4 py-3 px-3">
+                <li class="font-medium py-2 px-2 text-sm text-slate-200 pb-4">Industries</li>
+                <li class="py-2 px-2 text-xs">Education</li>
+                <li class="py-2 px-2 text-xs">Health Care</li>
+                <li class="py-2 px-2 text-xs">Banking</li>
+                <li class="py-2 px-2 text-xs">High Tech</li>
+            </ul>
+            <ul class="w-1/2 md:w-1/4 py-3 px-3">
+                <li class="font-medium text-sm text-slate-200 pb-4">Services</li>
+                <li class="py-2  text-xs">Cloud</li>
+                <li class="py-2  text-xs">Consulting</li>
+                <li class="py-2  text-xs">TCS Interactive</li>
+                <li class="py-2  text-xs">Cybersecurity</li>
+            </ul>
+            <ul class="w-1/2 md:w-1/4 py-3 px-3">
+                <li class="font-medium text-sm text-slate-200 pb-4">Products and Platforms</li>
+                <li class="py-2 text-xs">TCS ADD</li>
+                <li class="py-2 text-xs">TCS BaNCS™</li>
+                <li class="py-2 text-xs">TCS BFSI Platforms</li>
+                <li class="py-2 text-xs">TCS CHROMA</li>
+            </ul>
+            <ul class="w-1/2 md:w-1/4 py-3 px-3">
+                <li class="font-medium py-2 px-2 text-sm text-slate-200 pb-4">Insights</li>
+                <li class="py-2 px-2 text-xs text-slate-400">Customer Stories</li>
+                <li class="py-2 px-2 text-xs text-slate-400">Cloud</li>
+                <li class="py-2 px-2 text-xs text-slate-400">Blockchain</li>
+                <li class="py-2 px-2 text-xs text-slate-400">IoT</li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script>
+        function toggle() {
+
+            const el = document.getElementById('popup');
+            if (el.classList.contains('hidden')) {
+                el.classList.remove('hidden');
+
+            } else {
+                el.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+
+</html>
